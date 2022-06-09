@@ -36,6 +36,11 @@ jobs:
           else
             echo "Nope!"; exit 1
           fi
+ three:
+   docker:
+     circleci/node:13.8.0.
+   steps:
+     run: echo "hello"
 workflows:
   version: 2
   one_and_two:
